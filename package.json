@@ -1,0 +1,24 @@
+{
+  "name": "event-driven-programming",
+  "version": "1.0.0",
+  "description": "",
+  "main": "order.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JOSHUACURIE/event-driven-programming-grinding.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/JOSHUACURIE/event-driven-programming-grinding/issues"
+  },
+  "homepage": "https://github.com/JOSHUACURIE/event-driven-programming-grinding#readme",
+  "dependencies": {
+    "ws": "^8.20.0"
+  }
+}
