@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/JOSHUACURIE/event-driven-programming-grinding#readme",
   "dependencies": {
+    "prompt-sync": "^4.2.0",
     "ws": "^8.20.0"
   }
 }

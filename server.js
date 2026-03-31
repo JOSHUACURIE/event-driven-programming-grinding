@@ -9,15 +9,15 @@ console.log("Websocket server started on port 8081");
 wsss.on("connection",(socket)=>{
     console.log("New User Joined the Chat");
 
-    socket.on("message",(data)=>{
-        const message=data.toString();
-        console.log(`Received: ${message}`);
+    socket.on("message",(rawBuffer)=>{
+       const data=JSON.parse(rawBuffer.toString());
+        console.log(`[LOG] ${data.user}: ${data.text}`)
 
 
 
         wsss.clients.forEach((client)=>{
     if(client.readyState===1){
-        client.send(`BroadCast ${message}`)
+       client.send(JSON.stringify(data));
     }
 });
     });
